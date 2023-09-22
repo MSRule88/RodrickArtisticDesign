@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+      
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+      overflow: hidden;
+  }
+  .containerI {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 15%;
+  }
+
+  .maintextI {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 10px;
+    font-family: 'Berkshire Swash', cursive;
+  }
+  
+  .maintextI h1{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+    }
+
+  .maintextI h5{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+  }
+
+  .twinkle{
+    color: black;
+  }
+
+  .hide{
+    display:none;
+  }
+
+  .whiteFont{
+    color: white
+  }
+    
+  #stars > i {
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 5px #fff, 
+                  0 0 15px #fff, 
+                  0 0 25px #fff;
+      animation: animate linear infinite; 
+  }
+    
+  @keyframes animate {
+      0% {
+          opacity: 0;
+      }
+      25% {
+          opacity: 1;
+      }
+      50% {
+          opacity: 1;
+      }
+      95% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+  
+  
+  
+  footer a {
+    text-decoration:none;
+    color:#fff;
+  }
+  
+  footer {
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align:center;
+    background:#000;
+  }
+
+  .social-links {
+    color: white;
+    padding-right: 15px;
+    text-align: center;
+  }
+  
+  .social-links a {
+    color: white;
+    padding-left: 6px;
+    display: inline-block;
+    line-height: 0px;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  .social-links a:hover {
+    color: #45daff;
+  }
